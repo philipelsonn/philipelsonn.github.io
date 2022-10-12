@@ -154,14 +154,14 @@ section {
         position: relative;
         .h-shape {
             transition: all .4s ease-in-out;
-            width: 65%;
+            width: 70%;
             height: 100%;
             background-color: var(--color-secondary);
             position: absolute;
             left: 0;
             top: 0;
             z-index: -1;
-            clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+            clip-path: circle(87.3% at 0 69%);
         }
         .image {
             border-radius: var(--br-sm-2);
