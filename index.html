@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:image' content="img/favicon.ico/">
+    <meta property='og:description' content='My Personal Website'>
     <title>Philip Elson Bunthara</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
+
+    <!-- About -->
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
@@ -50,23 +54,25 @@
         </div>
     </header>
     <main>
-        <section class="container about" id="about">
+        <!-- Skills -->
+        <section class="container skill" id="skill">
             <div class="main-title">
                 <h2>MY <span>SKILLS</span><span class="bg-text">PHILIP ELSON</span></h2>
             </div>
-            <div class="about-container">
-                <div class="right-about">
-                    <div class="about-item">
+            <div class="skill-container">
+                <div class="right-skill">
+                    <div class="skill-item">
                         <div class="abt-text">
                             <p class="large-text">FRONT END</p>
                             <p class="small-text">HTML</p>
                             <p class="small-text">CSS</p>
+                            <p class="small-text">SCSS</p>
                             <p class="small-text">JavaScript</p>
                             <p class="small-text">Bootstrap</p>
                             <p class="small-text">jQuery</p>
                         </div>
                     </div>
-                    <div class="about-item">
+                    <div class="skill-item">
                         <div class="abt-text">
                             <p class="large-text">BACK END</p>
                             <p class="small-text">PHP</p>
@@ -79,7 +85,7 @@
                             <p class="small-text">SQL Server</p>
                         </div>
                     </div>
-                    <div class="about-item">
+                    <div class="skill-item">
                         <div class="abt-text">
                             <p class="large-text">OTHERS</p>
                             <p class="small-text">C</p>
@@ -93,6 +99,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Projects -->
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Projects</span><span class="bg-text">PHILIP ELSON</span></h2>
@@ -102,24 +110,82 @@
                     <div class="image">
                         <img src="img/thumbnails/rec.png" alt="rec">
                     </div>
-                    <div class="hover-items">
+                    <div class="control hover-items" data-id="rec">
+                        <h5>Full-Stack Web Application</h5>    
                         <h3>Recruitment Website</h3>    
+                        <h4>Click to see more</h4>    
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="image">
                         <img src="img/thumbnails/aeo.png" alt="aeo">
                     </div>
-                    <div class="hover-items">
+                    <div class="control hover-items" data-id="aeo">
+                        <h5>Full-Stack Web Application</h5>
                         <h3>2022 AEO Website</h3>
+                        <h4>Click to see more</h4>    
                     </div>
                 </div>
                 <div class="portfolio-item">
+                    <a>
                     <div class="image">
                         <img src="img/thumbnails/laf.png" alt="laf">
                     </div>
                     <div class="hover-items">
+                        <h5>Front-End Web Application</h5>
                         <h3>Laforant Website</h3>
+                        <h4>Click to see more</h4>    
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruitment Website -->
+        <section class="container" id="rec">
+            <div class="projects-content">
+                <div class="main-title">
+                    <h2>BNEC Recruitment <span>Website</span><span class="bg-text">PHILIP ELSON</span></h2>
+                    <p class="port-text">
+                        A full-stack web application
+                    </p>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="project-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/project1.jpg" alt="">
+                        <div class="project-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/project2.jpg" alt="">
+                        <div class="project-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,7 +196,7 @@
         <div class="control active-btn" data-id="home" >
             <i class="fas fa-user"></i>
         </div>
-        <div class="control" data-id="about">
+        <div class="control" data-id="skill">
             <i class="fas fa-laptop-code"></i>
         </div>
         <div class="control" data-id="portfolio">

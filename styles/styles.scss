@@ -189,7 +189,7 @@ section {
         justify-content: center;
         padding-right: 18rem;
         .name {
-            font-size: 3rem;
+            font-size: 40px;
             span { color: var(--color-secondary); }
         }
         p {
@@ -199,20 +199,18 @@ section {
     }
 }
 
-/*About*/
-.about-container {
+/*Skill*/
+.skill-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
-    .right-about {
+    .right-skill {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
-        .about-item {
+        .skill-item {
             border: 1px solid var(--color-grey-5);
             border-radius: 5px;
-            width: 250px;
             transition: all .4s ease-in-out;
             box-shadow: 1px 2px 15px rgba(0,0,0,.1);
             &:hover {
@@ -252,29 +250,11 @@ section {
     }
 }
 
-.about-stats {
+.skill-stats {
     padding-bottom: 4rem;
 }
 
-.stat-title {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 3.5rem 0;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 40%;
-        height: 1px;
-        background-color: var(--color-grey-5);
-        transform: translateX(-50%);
-    }
-}
-
-//Portfolios
+//Projects
 .port-text {
     padding: 2rem 0;
     text-align: center;
@@ -290,7 +270,6 @@ section {
         border-radius: 15px;
         img {
             width: 100%;
-            height: 300px;
             object-fit: cover;
             border-radius: 15px;
         }
@@ -348,6 +327,58 @@ section {
     opacity: 1;
     transform: scale(1);
 }
+
+//Project Explanation 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .project {
+        position: relative;
+        background-color: var(--color-grey-5);
+        border-radius: 5px;
+        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+        transition: all .4s ease-in-out;
+        &:hover {
+            box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+            transform: translateY(-5px);
+            transition: all .4s ease-in-out;
+            img {
+                filter: grayscale(0);
+                transform: scale(1.1);
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
+            }
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            filter: grayscale(100%);
+            transition: all .4s ease-in-out;
+        }
+        .project-text {
+            margin-top: -7px;
+            padding: 1.1rem;
+            border-top: 8px solid var(--color-secondary);
+            h4 {
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+                &:hover { color: var(--color-secondary); }
+            }
+            p{
+                color: var(--color-grey-2);
+                line-height: 2rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
 
 /*Independed components*/
 .btn-con {
