@@ -47,7 +47,7 @@
     }
 
     .container{
-        padding: 2rem 2.5rem !important;
+        padding: 2rem 2.5rem;
     }
 
     .portfolios{
@@ -180,9 +180,12 @@
     }
 }
 
-@media screen and (min-width:1250px){
-    .projects{
-        padding-bottom: 15rem;
+@media screen and (max-width:425px){
+    .container{
+        padding: 1rem 1rem;
+    }
+    .main-btn{
+        margin-right: 5px;
     }
 }
 
