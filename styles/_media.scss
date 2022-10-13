@@ -85,14 +85,23 @@
 }
 
 @media screen and (max-width:1250px){
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 6rem;
+    }
+
+    .project{
+        margin: auto;
+    }
+    
     .portfolios{
         grid-template-columns: repeat(2, 1fr);
     }
     .header-content .right-header{
         padding-right: 9rem;
     }
-
 }
+
 @media screen and (max-width:660px){
     .portfolios{
         grid-template-columns: repeat(1, 1fr);
@@ -168,6 +177,12 @@
                 font-size: 4rem;
             }
         }
+    }
+}
+
+@media screen and (min-width:1250px){
+    .projects{
+        padding-bottom: 15rem;
     }
 }
 
