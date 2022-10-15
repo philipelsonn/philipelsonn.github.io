@@ -212,6 +212,9 @@ section {
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
+.header-content .right-header .name p {
+  font-size: 1.8rem;
+}
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
@@ -271,6 +274,9 @@ section {
 .port-text {
   padding: 2rem 3rem;
   text-align: center;
+}
+.port-text span {
+  font-size: 12px;
 }
 
 .portfolios {
@@ -349,7 +355,7 @@ section {
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   margin-top: 3rem;
 }
 .projects .project {
